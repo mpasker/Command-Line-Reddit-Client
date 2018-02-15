@@ -18,9 +18,9 @@ namespace RedditClient
 
         static async Task MainAsync(string[] args)
         {
-            //var endpoint = "https://oauth.reddit.com/api/v1/me";
             var subreddit = Console.ReadLine();
-            Console.Write(await new RedditGetter().GetSubreddit(subreddit));
+            var subredditObject = await new RedditGetter().GetSubreddit(subreddit);
+            Console.Write(subredditObject);
             Console.Read();
         }
     }

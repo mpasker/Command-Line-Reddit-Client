@@ -6,6 +6,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using RedditClient.entities;
 
 namespace RedditClient
 {
@@ -13,7 +14,7 @@ namespace RedditClient
     {
         public async Task<string> GetEndpoint(string endpoint)
         {
-            var token = "Gc9F4aYht5DETuieIn_Dq6b3Dfo";
+            var token = Config.Token;
             var httpClient = new HttpClient();
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", token);
             //Reddit requires a user agent

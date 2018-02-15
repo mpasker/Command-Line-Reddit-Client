@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RedditClient
+namespace RedditClient.entities
 {
-    class Subreddit
+    static class Config
     {
-        public Post[] Children;
+        public static string Token = "Token goes here.";
     }
 }
