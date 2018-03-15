@@ -21,6 +21,17 @@ namespace RedditClient
             var subreddit = Console.ReadLine();
             var subredditObject = await new RedditGetter().GetSubreddit(subreddit);
             Console.Write(subredditObject);
+
+            var input = Console.ReadLine();
+            int postIndex = Convert.ToInt32(input);
+            var post = subredditObject.Children[postIndex - 1];
+            Console.WriteLine(post);
+            KeepTerminalOpen();
+
+        }
+
+        static void KeepTerminalOpen()
+        {
             Console.Read();
         }
     }

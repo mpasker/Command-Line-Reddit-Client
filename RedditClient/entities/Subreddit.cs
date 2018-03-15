@@ -13,7 +13,16 @@ namespace RedditClient
 
         public override string ToString()
         {
-            return String.Join("\n", (object[])Children);
+            var childStrings = "Posts\n";
+            for(var i = 1; i < Children.Length; i++)
+            {
+                childStrings += i;
+                childStrings += " ";
+                childStrings += Children[i - 1];
+                childStrings += "\n";
+            }
+
+            return childStrings;
         }
     }
 }

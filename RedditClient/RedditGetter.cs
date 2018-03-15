@@ -32,5 +32,7 @@ namespace RedditClient
             var parseJson = JsonConvert.DeserializeObject<SubredditListing>(await endpoint);
             return parseJson.Data;
         }
+
+    //    public async Task<>
     }
 }

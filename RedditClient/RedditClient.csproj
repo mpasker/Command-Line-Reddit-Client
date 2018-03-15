@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
+    <Compile Include="entities\Comment.cs" />
+    <Compile Include="entities\CommentHolder.cs" />
+    <Compile Include="entities\Replies.cs" />
     <Compile Include="entities\Post.cs" />
     <Compile Include="entities\PostHolder.cs" />
     <Compile Include="Program.cs" />
