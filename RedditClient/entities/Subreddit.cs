@@ -9,7 +9,7 @@ namespace RedditClient
 {
     class Subreddit
     {
-        public PostHolder[] Children;
+        public Holder<PostFromSubreddit>[] Children;
 
         public override string ToString()
         {

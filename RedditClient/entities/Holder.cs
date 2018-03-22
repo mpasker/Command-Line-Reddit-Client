@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace RedditClient.entities
 {
-    class PostHolder
+    public class Holder<T>
     {
-        public Post Data;
-
+        public T Data;
+    
         public override string ToString()
         {
             return Data.ToString();

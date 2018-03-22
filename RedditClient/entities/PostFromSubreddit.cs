@@ -2,7 +2,7 @@
 
 namespace RedditClient
 {
-    internal class Post
+    internal class PostFromSubreddit
     {
         public string Title;
         public int Score;

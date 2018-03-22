@@ -48,15 +48,14 @@
   <ItemGroup>
     <Compile Include="Config.cs" />
     <Compile Include="entities\Comment.cs" />
-    <Compile Include="entities\CommentHolder.cs" />
+    <Compile Include="entities\Holder.cs" />
+    <Compile Include="entities\PostFromSubreddit.cs" />
+    <Compile Include="entities\PostOrComment.cs" />
     <Compile Include="entities\Replies.cs" />
-    <Compile Include="entities\Post.cs" />
-    <Compile Include="entities\PostHolder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RedditGetter.cs" />
     <Compile Include="entities\Subreddit.cs" />
-    <Compile Include="entities\SubredditListing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

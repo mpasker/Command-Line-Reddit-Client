@@ -29,10 +29,15 @@ namespace RedditClient
         public async Task<Subreddit> GetSubreddit(string subreddit)
         {
             var endpoint = GetEndpoint("https://reddit.com/r/" + subreddit +".json");
-            var parseJson = JsonConvert.DeserializeObject<SubredditListing>(await endpoint);
+            var parseJson = JsonConvert.DeserializeObject<Holder<Subreddit>>(await endpoint);
             return parseJson.Data;
         }
 
-    //    public async Task<>
+        //public async Task<> GetPost(string subreddit, string id)
+        //{
+        //    var endpoint = GetEndpoint("https://reddit.com/r/" + subreddit + "/comments/" + id + ".json");
+        //    var parseJson = JsonConvert.DeserializeObject<>
+
+        //}
     }
 }

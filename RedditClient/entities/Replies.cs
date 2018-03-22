@@ -8,7 +8,7 @@ namespace RedditClient.entities
 {
     class Replies
     {
-        public CommentHolder[] Children;
+        public Holder<Comment>[] Children;
 
         public override string ToString()
         {
